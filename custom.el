@@ -41,6 +41,7 @@
  '(kept-old-versions 0)
  '(kill-whole-line t)
  '(make-backup-files nil)
+ '(menu-bar-mode nil)
  '(read-file-name-completion-ignore-case t)
  '(recentf-max-menu-items 30)
  '(recentf-max-saved-items 300)
