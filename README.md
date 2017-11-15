@@ -7,3 +7,9 @@ This is a minimal configuration for using Emacs in old machines (typically serve
 ```
 curl -L https://raw.githubusercontent.com/cbpark/minimacs.d/master/install.sh | $SHELL
 ```
+
+If you've cloned this using git, please make sure that you have created directories in `.emacs.d` before run Emacs.
+
+```
+mkdir -p ~/.emacs.d/{backup,autosave,etc}
+```
