@@ -59,6 +59,20 @@
   (global-set-key (kbd "C-x 0") 'winner-undo)
   (global-set-key (kbd "C-x 9") 'winner-redo))
 
+;; syntax highlighting for sysmtemd files
+(add-to-list 'auto-mode-alist '("\\.service\\'"   . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.timer\\'"     . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.target\\'"    . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.mount\\'"     . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.automount\\'" . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.slice\\'"     . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.socket\\'"    . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.path\\'"      . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.netdev\\'"    . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.network\\'"   . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.link\\'"      . conf-unix-mode))
+(add-to-list 'auto-mode-alist '("\\.automount\\'" . conf-unix-mode))
+
 ;; shortcut of commands
 (defalias 'qrr 'query-replace-regexp)
 (defalias 'srr 'replace-string)
