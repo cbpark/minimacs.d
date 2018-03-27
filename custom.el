@@ -1,8 +1,8 @@
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(auto-save-default nil)
  '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosave/" t))))
  '(auto-save-interval 20)
@@ -52,13 +52,12 @@
  '(show-paren-mode t)
  '(show-paren-style (quote mixed))
  '(tags-case-fold-search t)
- '(tool-bar-mode nil)
  '(use-dialog-box nil)
  '(use-file-dialog nil)
  '(vc-make-backup-files t))
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
