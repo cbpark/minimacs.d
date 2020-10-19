@@ -1,6 +1,7 @@
-# minimacs.d
+minimacs.d
+==========
 
-This is a minimal configuration for using Emacs in old machines (typically servers). It does not contain any external packages. Tested with [GNU Emacs](https://www.gnu.org/software/emacs/) 23.1.
+This is a minimal configuration for using Emacs in old machines (typically servers). It does not contain any external packages. Tested with [GNU Emacs](https://www.gnu.org/software/emacs/) 24.3.
 
 ## How to install
 
