@@ -41,6 +41,17 @@
 (require 'ido)
 (ido-mode 1)
 
+(setq ido-ignore-files (quote (".DS_Store" ".localized" "Thumbs.db"
+                               "desktop.ini" "*.aux")))
+
+(global-set-key (kbd "C-x C-m") (lambda ()
+                                  (interactive)
+                                  (call-interactively
+                                   (intern
+                                    (ido-completing-read
+                                     "M-x "
+                                     (all-completions "" obarray 'commandp))))))
+
 ;; recentf
 (require 'recentf)
 (run-at-time nil (* 10 60) 'recentf-save-list)
@@ -73,13 +84,7 @@
 (add-to-list 'auto-mode-alist '("\\.link\\'"      . conf-unix-mode))
 (add-to-list 'auto-mode-alist '("\\.automount\\'" . conf-unix-mode))
 
-;; shortcut of commands
-(defalias 'qrr 'query-replace-regexp)
-(defalias 'srr 'replace-string)
-(defalias 'dw  'delete-trailing-whitespace)
-
 ;; key bindings
-(global-set-key (kbd "C-x C-m") 'execute-extended-command)
 (global-set-key (kbd "C-s")     'isearch-forward-regexp)
 (global-set-key (kbd "C-r")     'isearch-backward-regexp)
 (global-set-key (kbd "C-x a r") 'align-regexp)

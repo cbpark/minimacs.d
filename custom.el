@@ -21,6 +21,7 @@
  '(echo-keystrokes 0.1)
  '(eldoc-echo-area-use-multiline-p nil)
  '(eldoc-idle-delay 1.0)
+ '(electric-pair-mode t)
  '(eshell-cmpl-autolist t)
  '(eshell-cmpl-compare-entry-function (quote string-lessp))
  '(eshell-error-if-no-glob t)
